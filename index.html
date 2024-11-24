@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Travel Booking Form</h1>
+        <img src="https://media.istockphoto.com/id/1164049513/photo/airplane-taking-off-from-the-airport.webp?a=1&b=1&s=612x612&w=0&k=20&c=4AXnVNX_aLd_fYABRreYA22JQNaXuvcKj6oM3RibAYk=" alt="">
+        <form>
+            
+            <!-- Destination Dropdown -->
+            <div class="form-group">
+                <label for="destination">Select Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="1">Select your destination</option>
+                    <option value="2">London</option>
+                    <option value="3">Paris</option>
+                    <option value="4">Newyork</option>
+                    <option value="5">Croatia</option>
+                   </select>
+            </div>
+
+            <!-- Transportation -->
+            <div class="form-group">
+                <label for="transportation">Transportation Type:</label>
+                <select id="transportation" name="transportation" >
+                    <option value="1" disabled selected>Select your transportation method</option>
+                    <option value="2">Flight</option>
+                    <option value="3">Train</option>
+                    <option value="4">Bus</option>
+                    
+                </select>
+            </div>
+
+            <!-- Accommodation Dropdown -->
+            <div class="form-group">
+                <label for="accommodation">Accommodation Type:</label>
+                <select id="accommodation" name="accommodation" required>
+                    <option value="1" disabled selected>Select your accommodation type</option>
+                    <option value="2">Hotel</option>
+                    <option value="3">Hostel</option>
+                    <option value="4">Resort</option>
+                    <option value="5">Airbnb</option>
+                    <option value="">Apartment</option>
+                </select>
+            </div>
+
+            <!-- Departure Date Picker -->
+            <div class="form-group">
+                <label for="departure_date">Departure Date:</label>
+                <input type="date" id="departure_date" name="departure_date" required>
+            </div>
+
+            <!-- Return Date Picker -->
+            <div class="form-group">
+                <label for="return_date">Return Date:</label>
+                <input type="date" id="return_date" name="return_date" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="button">Book Your Trip</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
